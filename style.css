@@ -37,7 +37,6 @@ body {
   position: fixed;
   width: 100%;
   background: rgb(255, 187, 51);
-  border-bottom: 1px solid #000;
   z-index: 1000;
 }
 
@@ -51,11 +50,16 @@ body {
   justify-content: space-between;
 }
 
+.logo {
+  flex-shrink: 0;
+}
+
 .logo a {
   font-family: "Carter One";
-  font-size: 1.9rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   color: black;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav-links {
@@ -71,15 +75,6 @@ body {
   position: relative;
 }
 
-.hamburger {
-  display: none;
-  font-size: 2.3rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* underline hover */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -91,7 +86,64 @@ body {
   transition: width 0.3s;
 }
 
+/* Hamburger Icon for Mobile */
+
+.hamburger {
+  width: 35px;
+  height: 40px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+
+  background-color: black;
+  border-radius: 999px;
+
+  transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 18px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 26px;
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 18px;
+  transform: rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: 18px;
+  transform: rotate(-45deg);
+}
+
 /* Mobile Nav Menu Dropdown */
+
+body.menu-open {
+  overflow: hidden;
+}
 
 .mobile-overlay {
   visibility: hidden;
@@ -99,13 +151,82 @@ body {
   inset: 0;
   position: fixed;
   z-index: 999;
+  pointer-events: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0,0,0,0.95);
+
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.mobility-overlay.active {
+.mobile-overlay.active {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  transform: translateY(-40px);
+  transition: transform 0.3s ease;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: var(--gold-primary);
+
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-nav a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.mobile-overlay.active .mobile-nav {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.mobile-overlay.active .mobile-nav a {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mobile-nav a:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.mobile-nav a:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.mobile-nav a:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.mobile-nav a:nth-child(4) {
+  transition-delay: 0.25s;
+}
+
+.mobile-nav a:nth-child(5) {
+  transition-delay: 0.3s;
+}
 /* ----------------------------------------------------- */
 /* HOME PAGE HERO SECTION */
 .intro {
