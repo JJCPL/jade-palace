@@ -27,7 +27,11 @@
       <a href="index.html">JADE PALACE</a>
     </div>
 
-    <button class="hamburger" aria-label="toggle menu">☰</button>
+    <button class="hamburger" aria-label="toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -36,8 +40,19 @@
       <li><a href="zodiac.html">The Chinese Zodiac</a></li>
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
+
   </nav>
 </header>
+
+<div class="mobile-overlay">
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Food Menu</a>
+    <a href="reviews.html">Customer Reviews</a>
+    <a href="zodiac.html">The Chinese Zodiac</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</div>
 
 <main class="review-page">
 
@@ -306,6 +321,7 @@
 </footer>
 
 <script src="animations.js" defer></script>
+<script src="hamburger.js" defer></script>
 
 </body>
 </html>

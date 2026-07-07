@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: solid 1px red; 
 }
 
-body {
+html, body {
   font-family: "Work Sans", sans-serif;
   color: #222;
+  overflow-x: hidden;
 }
 
 :root {
@@ -93,7 +95,7 @@ body {
   height: 40px;
   position: relative;
 
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -356,6 +358,8 @@ body.menu-open {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  padding: 2rem;
+  border-radius: 20px;
 }
 
 /* Alternate layout */
@@ -365,6 +369,11 @@ body.menu-open {
 
 .freshest-card:nth-child(even) .freshest-text {
   direction: ltr;
+}
+
+/* Slight background variation */
+.freshest-card:nth-child(odd) {
+  background: #ffffff;
 }
 
 /* Images */
@@ -406,13 +415,6 @@ body.menu-open {
   line-height: 1.9;
   color: #333;
   max-width: 38ch;
-}
-
-/* Slight background variation */
-.freshest-card:nth-child(odd) {
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 20px;
 }
 
 /* Subtle Nav Links */
@@ -2520,28 +2522,65 @@ body.menu-open {
   }
 
   .hamburger {
-    display: block;
+    display: flex;
     color: black;
     position: absolute;
     top: 1rem;
     right: 3rem;
   }
 
+  .freshest-container {
+    gap: 3rem;
+  }
+
+  .freshest {
+    padding: 4rem 1rem;
+  }
+
   .freshest-card {
     grid-template-columns: 1fr;
     direction: ltr !important;
+    gap: 1.5rem;
+    padding: 0.75rem;
+  }
+
+  .freshest-card:nth-child(odd) {
+    padding: 1rem;
   }
 
   .freshest-card img {
-    height: 300px;
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
   }
 
   .freshest-text p {
     max-width: 100%;
+    line-height: 1.8;
   }
 
   .service-options {
     grid-template-columns: 1fr;
+  }
+
+  .options-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .service-options {
+    padding: 0 10px;
+  }
+
+  .option {
+    border-radius: 20px;
+    padding: 0;
+  }
+
+  .option img {
+    height: auto; 
+    object-fit: contain;
+    display: block;
+    width: 100%;
   }
 
   .location-container {
@@ -2578,9 +2617,11 @@ body.menu-open {
   white-space: nowrap;
   position: sticky; 
   top: 60px;
+  width: auto;
   background: #f7f4ee;
   z-index: 500;
-  padding: 10px 0;
+  padding: 10px 14px;
+  margin: 20px 0;
   }
 
   .category-bar:-webkit-scrollbar {
@@ -2594,6 +2635,7 @@ body.menu-open {
     max-height: none;
     width: 100%; 
     margin-top: 20px;
+    margin-left: 0;
   }
 
   .cart-item {
@@ -2818,6 +2860,14 @@ body.menu-open {
 
   .total-row, .clear, .cart-end {
     flex-shrink: 0; 
+  }
+
+  /* Reviews Page */
+
+  .stat-card {
+    width: auto;
+    flex: 1;
+    min-width: 0;
   }
 
   /* Contact Page */

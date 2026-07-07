@@ -11,7 +11,6 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("menu-open");
-  console.log(overlay.classList);
 });
 
 navLinks.forEach(link => {
