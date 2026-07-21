@@ -855,7 +855,7 @@ menu.forEach((foodCategory) => {
         <div class="menu-price-and-button">
         <span class="food-price">£${foodItem.price.toFixed(2)}</span>
         <button class="add-to-cart" data-id="${foodItem.id}">Add</button>
-        </div> 
+        </div>
         `;
 
     itemRow.dataset.id = foodItem.id;
@@ -908,7 +908,7 @@ setMenus.forEach((setMenu) => {
   priceContainer.classList.add("set-menu-prices");
 
   Object.entries(setMenu.prices).forEach(([people, price]) => {
-    
+
     const button = document.createElement("button");
 
     button.classList.add("set-menu-btn");
@@ -959,11 +959,11 @@ const setCategoryObserver = () => {
 
           activeButton.classList.add("active");
 
-          activeButton.scrollIntoView({
-            behavior: "smooth",
-            inline: "center",
-            block: "nearest",
-          });
+          // activeButton.scrollIntoView({
+          //   behavior: "smooth",
+          //   inline: "center",
+          //   block: "nearest",
+          // });
         }
       });
     },
@@ -990,7 +990,7 @@ document.querySelectorAll(".category-bar button").forEach((button) => {
       block: "start",
     });
 
-    Button.scrollIntoView({
+    button.scrollIntoView({
       behavior: "smooth",
       inline: "center",
     });

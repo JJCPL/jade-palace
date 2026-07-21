@@ -21,7 +21,7 @@ navLinks.forEach(link => {
     document.body.classList.remove("menu-open");
   });
 });
-  
+
 overlay.addEventListener("click", (e) => {
   if (e.target === overlay) {
     hamburger.classList.remove("active");
