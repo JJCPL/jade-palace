@@ -959,11 +959,11 @@ const setCategoryObserver = () => {
 
           activeButton.classList.add("active");
 
-          // activeButton.scrollIntoView({
-          //   behavior: "smooth",
-          //   inline: "center",
-          //   block: "nearest",
-          // });
+          activeButton.scrollIntoView({
+            behavior: "smooth",
+            inline: "center",
+            block: "nearest",
+          });
         }
       });
     },
@@ -993,6 +993,7 @@ document.querySelectorAll(".category-bar button").forEach((button) => {
     button.scrollIntoView({
       behavior: "smooth",
       inline: "center",
+      block: "nearest",
     });
 
     document

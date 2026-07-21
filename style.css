@@ -8,7 +8,7 @@ html,
 body {
   font-family: "Work Sans", sans-serif;
   color: #222;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 :root {
@@ -855,7 +855,6 @@ body.menu-open {
 
 .menu-layout {
   display: grid;
-  align-items: start;
   grid-template-columns: 1.7fr 1.3fr;
   gap: 40px;
 }
@@ -873,23 +872,23 @@ body.menu-open {
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
-  max-width: 100%;
+  width: calc(100% + 20px);
   justify-content: flex-start;
 
   position: sticky;
-  top: 80px;
+  top: 93px;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
 
   border-radius: 12px;
 
-  z-index: 9999;
+  z-index: 500;
 
   padding: 10px 10px 10px 16px;
-  margin: 20px 0 18px;
+  margin: 20px -10px 18px;
 
-  background: red;
+  background: #f7f4ee;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   backdrop-filter: blur(8px);
@@ -929,7 +928,7 @@ body.menu-open {
 
 .menu-category {
   margin-bottom: 3rem;
-  scroll-margin-top: 140px;
+  scroll-margin-top: 170px;
 }
 
 .menu-category h2 {
@@ -1047,7 +1046,7 @@ body.menu-open {
   padding: 1.5rem;
   border-radius: 12px;
   position: sticky;
-  top: 100px;
+  top: 160px;
   height: fit-content;
   z-index: 100;
   margin-left: 20px;
@@ -1277,7 +1276,7 @@ body.menu-open {
   font-size: 0.8rem;
   opacity: 0.8;
   margin-bottom: 14px;
-  line-height: 1.2px;
+  line-height: 1.2;
 }
 
 .cart-phones {
@@ -2494,9 +2493,6 @@ body.menu-open {
 /* RESPONSIVE FOR MOBILE */
 
 @media (max-width: 920px) {
-  * {
-    outline: solid 1px red;
-  }
 
   /* Home Page */
 
@@ -2602,16 +2598,20 @@ body.menu-open {
     grid-template-columns: 1fr;
   }
 
+  .menu-category {
+    scroll-margin-top: 140px;
+  }
+
   .category-bar {
     overflow-x: auto;
     white-space: nowrap;
     position: sticky;
-    top: 60px;
-    width: auto;
+    top: 65px;
+    width: 100%;
     background: #f7f4ee;
     z-index: 500;
     padding: 10px 14px;
-    margin: 20px 0;
+    margin: -5px 0 20px;
   }
 
   .category-bar:-webkit-scrollbar {
