@@ -346,7 +346,7 @@ body.menu-open {
 /* FRESHEST SECTION */
 
 .freshest {
-  padding: 7rem 2rem;
+  padding: 4rem 2rem;
   background: #ece9e3;
 }
 
@@ -355,7 +355,7 @@ body.menu-open {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 4rem;
 }
 
 /* Card Layout */
@@ -1601,11 +1601,24 @@ body.menu-open {
 }
 
 .placeholder-icon {
-  font-size: 4rem;
-  color: var(--accent-primary);
+  font-size: 4.5rem;
+  color: var(--accent-dark);
+  animation: slowSpin 30s linear infinite;
 
-  filter: drop-shadow(0 0 10px rgba(79, 209, 161, 0.22))
-    drop-shadow(0 0 28px rgba(79, 209, 161, 0.12));
+  filter:
+    drop-shadow(0 0 12px rgba(79, 209, 161, 0.28))
+    drop-shadow(0 0 32px rgba(79, 209, 161, 0.16))
+    drop-shadow(0 0 55px rgba(79, 209, 161, 0.08))
+    brightness(1.15);
+}
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(450deg);
+  }
 }
 
 .zodiac-placeholder p {
@@ -1621,15 +1634,14 @@ body.menu-open {
   display: flex;
   justify-content: center;
   margin: 0.5rem 0 1rem;
-  color: #6d2d2d;
 
-  opacity: 0.9;
+  opacity: 0;
 
   transform: translateY(20px) scale(0.92);
 
   transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
+    opacity 0.45s ease,
+    transform 0.45s ease;
 }
 
 .zodiac-reveal-icon.show {
@@ -1641,12 +1653,21 @@ body.menu-open {
   width: 100px;
   height: 100px;
 
-  filter: drop-shadow(0 0 12px rgba(95, 143, 115, 0.18))
-    drop-shadow(0 0 28px rgba(95, 143, 115, 0.1));
+  filter:
+    drop-shadow(0 0 8px rgba(230,196,90,.35))
+    drop-shadow(0 0 20px rgba(230,196,90,.20));
 
   transition:
     transform 0.6s ease,
     filter 0.6s ease;
+}
+.zodiac-reveal-icon img:hover {
+    transform: scale(1.06);
+
+    filter:
+        brightness(1.12)
+        drop-shadow(0 0 12px rgba(230,196,90,.55))
+        drop-shadow(0 0 26px rgba(230,196,90,.35));
 }
 
 /* Main Info Card */
@@ -1702,6 +1723,75 @@ body.menu-open {
   border-top: 1px solid rgba(224, 196, 108, 0.12);
 }
 
+.meta-item {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(184, 155, 74, 0.2);
+}
+
+.meta-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.meta-header {
+  color: var(--accent-primary);
+  font-size: clamp(16px, 1vw, 23px);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.meta-value {
+  display: flex;
+  gap: 10px;
+  color: inherit;
+  font-size: clamp(13px, 1vw, 18px);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.number-group {
+  display: flex;
+  align-items: center;
+  padding: 3px 8px;
+  gap: 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 175, 55, 0.08);
+  background: transparent;
+}
+
+.lucky-number-symbol {
+  font-size: 1.2rem;
+  color: var(--gold-primary);
+}
+
+.colour-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.colour-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.flower-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flower-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
 /* Compatibility Card */
 
 .zodiac-compatibility-card {
@@ -2493,7 +2583,6 @@ body.menu-open {
 /* RESPONSIVE FOR MOBILE */
 
 @media (max-width: 920px) {
-
   /* Home Page */
 
   .nav-links {
@@ -2520,13 +2609,13 @@ body.menu-open {
   }
 
   .freshest {
-    padding: 4rem 1rem;
+    padding: 3rem 1rem 4rem;
   }
 
   .freshest-card {
     grid-template-columns: 1fr;
     direction: ltr !important;
-    gap: 1.5rem;
+    gap: 3rem;
     padding: 0.75rem;
   }
 
@@ -2857,6 +2946,92 @@ body.menu-open {
     flex: 1;
     min-width: 0;
   }
+
+  /* Zodiac Page */
+  .zodiac-input {
+    margin: 2rem 0.5rem 0;
+  }
+
+  .zodiac-input button {
+    font-size: 16px;
+  }
+
+  .zodiac-wheel-section {
+    min-height: calc(100vh);
+  }
+
+  .zodiac-pointer {
+    top: 12px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #f4d35e;
+  }
+
+  .zodiac-wheel-wrapper {
+    width: 100%;
+    margin: 5rem auto 1.5rem;
+  }
+
+  .placeholder-icon {
+    margin-top: 2rem;
+  }
+
+  .zodiac-placeholder p {
+    margin-top: 0.1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .zodiac-reveal-icon {
+    margin: 1.5rem 0 4.5rem;
+  }
+
+  .zodiac-reveal-icon img {
+
+  filter:
+    brightness(1.12)
+    drop-shadow(0 0 12px rgba(230, 196, 90, .55))
+    drop-shadow(0 0 26px rgba(230, 196, 90, .35))
+  }
+
+  .zodiac-info-card {
+    width: 106%;
+    max-width: none;
+    padding: 1.4rem 1.5rem;
+  }
+
+  .zodiac-element {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .zodiac-traits {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .zodiac-info-card h2 {
+    font-size: 3rem;
+  }
+
+  .zodiac-description {
+    max-width: 80ch;
+  }
+
+  .zodiac-compatibility-card {
+    width: 100%;
+    max-width: none;
+    padding: 1.4rem 1.5rem;
+  }
+
+  .compatibility-grid {
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
 
   /* Contact Page */
   .contact-grid {

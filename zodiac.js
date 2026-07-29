@@ -3,6 +3,7 @@ const zodiacs = [
   {
     name: "Rat",
     icon: "images/zodiac-images/zodiac-animal-icons/rat.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/rat.svg",
     symbol: "鼠",
     traits: "Quick-witted, resourceful, smart",
 
@@ -23,7 +24,11 @@ const zodiacs = [
       water:
         "Water Rats are intuitive, perceptive, and highly adaptable. They communicate with ease and often excel in social situations, using their emotional intelligence to navigate complex relationships.",
     },
+    cycleStartYear: 1924,
     luckyNumbers: ["2", "3", "6"],
+    luckyColours: ["Blue", "Gold", "Green"],
+    luckyFlower: "Lily",
+
     compatibility: {
       romance: ["Dragon", "Monkey", "Ox"],
 
@@ -35,6 +40,7 @@ const zodiacs = [
   {
     name: "Ox",
     icon: "images/zodiac-images/zodiac-animal-icons/ox.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/ox.svg",
     symbol: "牛",
     traits: "Strong, dependable, determined",
     defaultDescription:
@@ -54,7 +60,12 @@ const zodiacs = [
       water:
         "Water Oxen are intuitive, patient, and diplomatic. More emotionally aware than other Oxen, they balance determination with sensitivity.",
     },
+
+    cycleStartYear: 1925,
     luckyNumbers: ["1", "4", "9"],
+    luckyColours: ["White", "Yellow", "Green"],
+    luckyFlower: "Tulip",
+
     compatibility: {
       romance: ["Rat", "Snake", "Rooster"],
       friendship: ["Monkey", "Pig", "Dog"],
@@ -64,6 +75,7 @@ const zodiacs = [
   {
     name: "Tiger",
     icon: "images/zodiac-images/zodiac-animal-icons/tiger.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/tiger.svg",
     symbol: "虎",
     traits: "Brave, competitive, unpredictable",
     defaultDescription:
@@ -84,7 +96,10 @@ const zodiacs = [
         "Water Tigers are intuitive, thoughtful, and emotionally intelligent. Their softer communication style allows them to connect deeply with others.",
     },
 
+    cycleStartYear: 1926,
     luckyNumbers: ["1", "3", "7"],
+    luckyColours: ["Blue", "Grey", "Orange"],
+luckyFlower: "Cineraria",
 
     compatibility: {
       romance: ["Horse", "Dog", "Pig"],
@@ -95,6 +110,7 @@ const zodiacs = [
   {
     name: "Rabbit",
     icon: "images/zodiac-images/zodiac-animal-icons/rabbit.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/rabbit.svg",
     symbol: "兔",
     traits: "Gentle, quiet, elegant",
     defaultDescription:
@@ -115,7 +131,11 @@ const zodiacs = [
         "Water Rabbits are intuitive, adaptable, and emotionally aware. Their natural diplomacy and sensitivity allow them to connect deeply with others.",
     },
 
+    cycleStartYear: 1927,
     luckyNumbers: ["3", "4", "9"],
+    luckyColours: ["Red", "Pink", "Purple", "Blue"],
+    luckyFlower: "Plantain Lily",
+
 
     compatibility: {
       romance: ["Goat", "Pig", "Dog"],
@@ -126,6 +146,7 @@ const zodiacs = [
   {
     name: "Dragon",
     icon: "images/zodiac-images/zodiac-animal-icons/dragon.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/dragon.svg",
     symbol: "龍",
     traits: "Confident, intelligent, ambitious",
     defaultDescription:
@@ -146,7 +167,10 @@ const zodiacs = [
         "Water Dragons are perceptive, adaptable, and emotionally intelligent. Their calmer approach allows them to communicate more effectively than many Dragons.",
     },
 
+    cycleStartYear: 1928,
     luckyNumbers: ["1", "6", "7"],
+    luckyColours: ["Gold", "Silver", "Grey"],
+    luckyFlower: "Bleeding Heart",
 
     compatibility: {
       romance: ["Rat", "Monkey", "Rooster"],
@@ -157,6 +181,7 @@ const zodiacs = [
   {
     name: "Snake",
     icon: "images/zodiac-images/zodiac-animal-icons/snake.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/snake.svg",
     symbol: "蛇",
     traits: "Wise, intuitive, mysterious",
     defaultDescription:
@@ -177,7 +202,10 @@ const zodiacs = [
         "Water Snakes are intuitive, perceptive, and emotionally intelligent. They communicate with subtlety and often understand situations deeply before acting.",
     },
 
+    cycleStartYear: 1929,
     luckyNumbers: ["2", "8", "9"],
+    luckyColours: ["Black", "Red", "Yellow"],
+    luckyFlower: "Orchid",
 
     compatibility: {
       romance: ["Ox", "Rooster", "Monkey"],
@@ -188,6 +216,7 @@ const zodiacs = [
   {
     name: "Horse",
     icon: "images/zodiac-images/zodiac-animal-icons/horse.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/horse.svg",
     symbol: "馬",
     traits: "Energetic, independent, spirited",
     defaultDescription:
@@ -208,7 +237,11 @@ const zodiacs = [
         "Water Horses are intuitive, adaptable, and emotionally aware. They are more flexible in relationships and tend to communicate thoughtfully.",
     },
 
+    cycleStartYear: 1930,
     luckyNumbers: ["2", "3", "7"],
+    luckyColours: ["Green", "Yellow"],
+    luckyFlower: "Calla Lily",
+
 
     compatibility: {
       romance: ["Tiger", "Goat", "Dog"],
@@ -219,6 +252,7 @@ const zodiacs = [
   {
     name: "Goat",
     icon: "images/zodiac-images/zodiac-animal-icons/goat.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/goat.svg",
     symbol: "羊",
     traits: "Calm, creative, kind",
     defaultDescription:
@@ -239,7 +273,10 @@ const zodiacs = [
         "Water Goats are intuitive, compassionate, and emotionally perceptive. Their calm communication style helps them build deep relationships.",
     },
 
+    cycleStartYear: 1931,
     luckyNumbers: ["2", "7", "9"],
+    luckyColours: ["Green", "Red", "Purple"],
+    luckyFlower: "Carnation",
 
     compatibility: {
       romance: ["Rabbit", "Horse", "Pig"],
@@ -250,6 +287,7 @@ const zodiacs = [
   {
     name: "Monkey",
     icon: "images/zodiac-images/zodiac-animal-icons/monkey.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/monkey.svg",
     symbol: "猴",
     traits: "Clever, curious, playful",
     defaultDescription:
@@ -270,7 +308,10 @@ const zodiacs = [
         "Water Monkeys are intuitive, flexible, and socially intelligent. They communicate easily with others and adapt quickly to changing situations.",
     },
 
+    cycleStartYear: 1932,
     luckyNumbers: ["4", "7", "9"],
+    luckyColours: ["White", "Blue", "Gold"],
+    luckyFlower: "Chrysanthemum",
 
     compatibility: {
       romance: ["Rat", "Dragon", "Snake"],
@@ -281,6 +322,7 @@ const zodiacs = [
   {
     name: "Rooster",
     icon: "images/zodiac-images/zodiac-animal-icons/rooster.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/rooster.svg",
     symbol: "雞",
     traits: "Observant, hardworking, confident",
     defaultDescription:
@@ -301,7 +343,10 @@ const zodiacs = [
         "Water Roosters are perceptive, adaptable, and diplomatic. Compared to other Roosters, they communicate more calmly and thoughtfully.",
     },
 
+    cycleStartYear: 1933,
     luckyNumbers: ["5", "7", "8"],
+    luckyColours: ["Gold", "Brown", "Yellow"],
+    luckyFlower: "Gladiolus",
 
     compatibility: {
       romance: ["Ox", "Dragon", "Snake"],
@@ -312,6 +357,7 @@ const zodiacs = [
   {
     name: "Dog",
     icon: "images/zodiac-images/zodiac-animal-icons/dog.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/dog.svg",
     symbol: "狗",
     traits: "Loyal, honest, reliable",
     defaultDescription:
@@ -332,7 +378,10 @@ const zodiacs = [
         "Water Dogs are intuitive, understanding, and emotionally intelligent. They communicate thoughtfully and often build strong emotional connections.",
     },
 
+    cycleStartYear: 1934,
     luckyNumbers: ["3", "4", "9"],
+    luckyColours: ["Green", "Red", "Purple"],
+    luckyFlower: "Rose",
 
     compatibility: {
       romance: ["Tiger", "Rabbit", "Horse"],
@@ -343,6 +392,7 @@ const zodiacs = [
   {
     name: "Pig",
     icon: "images/zodiac-images/zodiac-animal-icons/pig.svg",
+    revealIcon: "images/zodiac-images/zodiac-reveal-icons/pig.svg",
     symbol: "豬",
     traits: "Generous, diligent, compassionate",
     defaultDescription:
@@ -363,7 +413,10 @@ const zodiacs = [
         "Water Pigs are intuitive, empathetic, and emotionally intelligent. Their gentle communication style helps create strong and lasting relationships.",
     },
 
+    cycleStartYear: 1935,
     luckyNumbers: ["2", "5", "8"],
+    luckyColours: ["Yellow", "Grey", "Brown", "Gold"],
+    luckyFlower: "Hydrangea",
 
     compatibility: {
       romance: ["Rabbit", "Goat", "Tiger"],
@@ -375,7 +428,51 @@ const zodiacs = [
 
 const zodiacElements = ["wood", "fire", "earth", "metal", "water"];
 
-// LOGIC FUNCTIONS
+const colourHexMap = {
+    Green: "#2E8B57",
+    Gold: "#E6C45A",
+    Blue: "#3B82F6",
+    Red: "#C0392B",
+    Purple: "#8E44AD",
+    Yellow: "#F4C542",
+    White: "#F5F5F5",
+    Black: "#2B2B2B",
+    Grey: "#808080",
+    Pink: "#EC4899",
+    Orange: "#F97316",
+    Brown: "#8B5E3C",
+    Silver: "#C0C0C0"
+};
+
+const chineseNumberMap = {
+    1: "一",
+    2: "二",
+    3: "三",
+    4: "四",
+    5: "五",
+    6: "六",
+    7: "七",
+    8: "八",
+    9: "九"
+};
+
+const flowerMap = {
+  "Lily": "images/zodiac-images/zodiac-flower-icons/lily.svg",
+  "Tulip": "images/zodiac-images/zodiac-flower-icons/tulip.svg",
+  "Cineraria": "images/zodiac-images/zodiac-flower-icons/cineraria.svg",
+  "Plantain Lily": "images/zodiac-images/zodiac-flower-icons/plantain-lily.svg",
+  "Bleeding Heart": "images/zodiac-images/zodiac-flower-icons/bleeding-heart.svg",
+  "Orchid": "images/zodiac-images/zodiac-flower-icons/orchid.svg",
+  "Calla Lily": "images/zodiac-images/zodiac-flower-icons/calla-lily.svg",
+  "Carnation": "images/zodiac-images/zodiac-flower-icons/carnation.svg",
+  "Chrysanthemum": "images/zodiac-images/zodiac-flower-icons/chrysanthemum.svg",
+  "Gladiolus": "images/zodiac-images/zodiac-flower-icons/gladiolus.svg",
+  "Rose": "images/zodiac-images/zodiac-flower-icons/rose.svg",
+  "Hydrangea": "images/zodiac-images/zodiac-flower-icons/hydrangea.svg"
+};
+
+
+// LOGIC or HELPER FUNCTIONS
 
 const getZodiac = (year) => {
   const zodiacIndex = (((year - 1924) % 12) + 12) % 12;
@@ -387,6 +484,16 @@ const getZodiac = (year) => {
 
     element: zodiacElements[elementIndex],
   };
+};
+
+const getBirthYears = (cycleStartYear) => {
+  const birthYears = [];
+  let currentYear = cycleStartYear;
+  while (currentYear <= new Date().getFullYear()) {
+    birthYears.push(currentYear);
+    currentYear += 12;
+  }
+  return birthYears;
 };
 
 // VARIABLES THAT REFERENCE THE DOM
@@ -467,7 +574,7 @@ for (let i = 0; i < totalSegments; i++) {
   );
 
   const segmentData = `
-      M 250 250 
+      M 250 250
       L ${start.x} ${start.y}
       A 200 200 0 0 1 ${end.x} ${end.y}
       Z
@@ -507,7 +614,7 @@ for (let i = 0; i < totalSegments; i++) {
     `,
   );
 
-  // Icons for the wheel 
+  // Icons for the wheel
 
   const animal = document.createElementNS(
     "http://www.w3.org/2000/svg",
@@ -696,11 +803,11 @@ const spinFromDrag = (index) => {};
 
 // Wheel to snap to the nearest segment after drag interaction
 
-// Adding info and animal icon to the results section underneath wheel
+// INFORMATION CARDS RENDER
 
 const updateInfoCard = (zodiac, element) => {
   revealIcon.innerHTML = `
-    <img src="${zodiac.icon}" alt="${zodiac.name}">
+    <img src="${zodiac.revealIcon}" alt="${zodiac.name}">
   `;
 
   const description = element
@@ -708,6 +815,49 @@ const updateInfoCard = (zodiac, element) => {
     : zodiac.defaultDescription;
 
   const elementLabel = element ? `${element} element` : "Traditional Zodiac";
+
+  const birthYears = getBirthYears(zodiac.cycleStartYear);
+  console.log(birthYears);
+
+  const colourChips = zodiac.luckyColours.map(colour => {
+  return `
+    <div class="colour-group">
+      <span
+        class="colour-dot"
+        style="background: ${colourHexMap[colour]}">
+      </span>
+
+      ${colour}
+    </div>
+  `;
+}).join("");
+
+const luckyNumberPills = zodiac.luckyNumbers.map(number => {
+  return `
+    <div class="number-group">
+      <span
+        class="lucky-number-symbol">${chineseNumberMap[number]}
+      </span>
+      <span
+        class="lucky-number-english">${number}
+      </span>
+    </div>`;
+}).join("");
+
+const zodiacFlower = `
+    <div class="flower-group">
+      <img
+        class="flower-icon"
+        src ="${flowerMap[zodiac.luckyFlower]}"
+        alt = "${zodiac.luckyFlower}"
+      >
+
+      <span class="flower-label">
+        ${zodiac.luckyFlower}
+      </span>
+    </div>
+  `;
+
 
   info.innerHTML = `
 
@@ -729,9 +879,53 @@ const updateInfoCard = (zodiac, element) => {
 
     <div class="zodiac-meta">
 
-    <span>Lucky Numbers: 
-      ${zodiac.luckyNumbers.join(" • ")}
-    </span>
+      <div class="meta-item">
+
+        <span class="meta-header">
+        Birth Years
+        </span>
+
+        <p class="meta-value">
+          ${birthYears.join(" • ")}
+        </p>
+
+      </div>
+
+      <div class="meta-item">
+
+        <span class="meta-header">
+          Lucky Numbers
+        </span>
+
+        <div class="meta-value">
+          ${luckyNumberPills}
+        </div>
+
+      </div>
+
+      <div class="meta-item">
+
+        <span class="meta-header">
+          Lucky Colours
+        </span>
+
+        <div class="meta-value">
+          ${colourChips}
+        </div>
+
+      </div>
+
+      <div class="meta-item">
+
+        <span class="meta-header">
+          Lucky Flower
+        </span>
+
+        <div class="meta-value">
+          ${zodiacFlower}
+        </div>
+
+      </div>
 
     </div>
   `;
@@ -807,3 +1001,4 @@ button.addEventListener("click", () => {
     spinFromBirthday(index, element);
   }, 1500);
 });
+

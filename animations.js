@@ -1,4 +1,4 @@
-// Animate elements on user scroll 
+// Animate elements on user scroll
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -6,14 +6,14 @@ const observer = new IntersectionObserver(entries => {
           entry.target.classList.add("show");
           observer.unobserve(entry.target);
         }
-    }); 
+    });
 },
     {
         threshold: 0.2
     });
 
 const initAnimations = () => {
-    const elements = document.querySelectorAll(".animate"); 
+    const elements = document.querySelectorAll(".animate");
 
     elements.forEach((element, index) => {
 
@@ -25,15 +25,15 @@ const initAnimations = () => {
 
     else if (element.classList.contains("menu-item")) {
         delay = (index % 8) * 0.02;
-    } 
+    }
     else {
-        delay = index * 0.05; 
+        delay = index * 0.05;
     }
 
-    element.style.transitionDelay = `${delay}s`; 
+    element.style.transitionDelay = `${delay}s`;
     observer.observe(element);
     });
 };
 
-initAnimations(); 
+initAnimations();
 
