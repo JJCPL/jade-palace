@@ -657,6 +657,7 @@ body.menu-open {
   line-height: 1.8;
   color: #333;
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 .location-map-info {
@@ -715,7 +716,7 @@ body.menu-open {
 }
 
 .footer-brand {
-  text-align: left;
+  text-align: center;
 }
 
 .footer-logo {
@@ -788,6 +789,10 @@ body.menu-open {
   filter: drop-shadow(0 0 8px rgba(214, 185, 140, 0.28));
 }
 
+ .footer-days, .footer-times {
+    display: block;
+  }
+
 /* SOCIALS */
 
 .socials {
@@ -795,6 +800,7 @@ body.menu-open {
   display: flex;
   gap: 1.2rem;
   padding: 0;
+  justify-content: center;
 }
 
 .socials a {
@@ -1601,6 +1607,7 @@ body.menu-open {
 }
 
 .placeholder-icon {
+  font-family: serif;
   font-size: 4.5rem;
   color: var(--accent-dark);
   animation: slowSpin 30s linear infinite;
@@ -1912,16 +1919,31 @@ body.menu-open {
   margin-bottom: 1.5rem;
 }
 
+.stat-card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
 .stat-label {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.stat-star {
+  font-size: 0.6em;
+  position: relative;
+  top: -2px;
 }
 
 .stat-number {
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--accent-primary);
+  margin: 0;
 }
 
 .review-page img {
@@ -1950,9 +1972,7 @@ body.menu-open {
   margin-top: 1.5rem;
 }
 
-.stat-card {
-  width: 250px;
-}
+
 
 /* Reviews */
 
@@ -2350,6 +2370,15 @@ body.menu-open {
   transition: all 0.3s ease;
 }
 
+.location-cta {
+  font-style: italic !important;
+  font-size: 0.8rem;
+}
+
+.contact-phone, .contact-socials {
+  padding: 1.2rem;
+}
+
 .contact-card:hover {
   transform: translateY(-4px);
   border: 1px solid rgba(190, 150, 95, 0.22);
@@ -2385,16 +2414,38 @@ body.menu-open {
 }
 
 .contact-card p a {
-  color: var(--red-dark);
   opacity: 1;
   transition: all 0.3s ease;
-  display: inline-block;
   line-height: 1;
+}
+
+.contact-numbers {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 3rem;
+}
+
+.contact-numbers p {
+  margin: 0;
+}
+
+.contact-numbers a {
+  font-size: clamp(1.2rem, 1vw + 0.4rem, 1.5rem);
+  color: var(--accent-primary);
+  font-weight: 900;
+
+}
+
+.contact-numbers p + p::before {
+  content: "|";
+  color: rgba(0,0,0,0.25);
+  margin-right: 1rem;
 }
 
 .contact-card p a:hover {
   transform: scale(1.05);
-  color: var(--accent-dark);
+  color: var(--gold-primary);
 }
 
 .contact-social-icons {
@@ -2419,7 +2470,7 @@ body.menu-open {
   align-items: center;
   justify-content: center;
 
-  color: var(--accent-dark);
+  color: var(--accent-primary);
 
   opacity: 0.78;
 
@@ -2445,7 +2496,7 @@ body.menu-open {
 .contact-map iframe {
   width: 100%;
   height: 100%;
-  min-height: 450px;
+  min-height: 395px;
 
   display: block;
 
@@ -2463,6 +2514,7 @@ body.menu-open {
 
 .contact-gallery-intro {
   margin-bottom: 4rem;
+  margin-top: 3rem;
 }
 
 .contact-gallery-intro h2 {
@@ -2482,7 +2534,8 @@ body.menu-open {
 }
 
 .shopfront-image {
-  height: 480px;
+  aspect-ratio: 20 / 9;
+  max-height: 550px;
   overflow: hidden;
   border-radius: 28px;
   border: 1px solid rgba(190, 150, 95, 0.12);
@@ -2493,9 +2546,9 @@ body.menu-open {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
-  display: block;
+  object-position: center 75%;
 }
+
 
 /* ----------------------------------------------------- */
 /* HOVER EFFECTS (DESKTOP VERSION) */
@@ -2661,6 +2714,14 @@ body.menu-open {
   .location-container {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .location-map-info h3 {
+    font-size: 1.2em;
+  }
+
+  .address {
+    font-size: 14.5px;
   }
 
   /* Menu Page */
@@ -2941,11 +3002,67 @@ body.menu-open {
 
   /* Reviews Page */
 
+  .review-header {
+    font-size: clamp(30px, 20vw, 38px);
+    margin-bottom: 1.1rem;
+  }
+
+  .review-subheader {
+    width: 22em;
+  }
+
   .stat-card {
     width: auto;
     flex: 1;
     min-width: 0;
+    text-align: center;
   }
+
+  .featured-review-card, .reviews-grid-section, .tripadvisor-card {
+    max-width: 350px;
+  }
+
+  .section-heading {
+    margin-bottom: 2em;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 11px;
+  }
+
+  .reviews-grid-section {
+    margin-top: 3em;
+  }
+
+  .tripadvisor-section {
+    border-bottom: 1px solid rgba(212, 175, 55, 0.28);
+    border-top: 1px solid rgba(212, 175, 55, 0.28);
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+  }
+
+  .tripadvisor-card {
+    margin: 3em 0 3em;
+    max-width: 270px;
+    padding: 1.7rem 1.3rem
+  }
+
+  .tripadvisor-content h3 {
+    font-size: 26px;
+  }
+
+  .review-closing {
+    max-width: 320px;
+  }
+
+  .review-closing h2 {
+    font-size: 2rem;
+  }
+
+  .review-closing p {
+    line-height: 1.8;
+  }
+
 
   /* Zodiac Page */
   .zodiac-input {
@@ -3038,11 +3155,60 @@ body.menu-open {
     grid-template-columns: 1fr;
   }
 
+  .contact-numbers {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+  }
+
+  .contact-numbers p + p::before {
+        display: none;
+    }
+
+  .contact-gallery-intro {
+    margin-top: 3rem;
+  }
+
+  .sun-thurs span, .fri-sat span {
+    display: block;
+  }
+  .shopfront-image {
+    aspect-ratio: 5 / 3;
+    margin-top: -1em;
+    margin-bottom: -1em;
+  }
+
   /* FOOTER */
 
   .footer-top {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .footer-column p {
+    font-size: 15.3px;
+  }
+
+  .footer-column.contact {
+    justify-self: center;
+    align-items: center;
+  }
+
+  .footer-column.quick-nav {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .footer-column.opening-hours {
+    grid-column: span 2;
+    grid-row: 3;
+
+    margin-top: 1em;
   }
 
   .footer-brand,
@@ -3050,7 +3216,26 @@ body.menu-open {
     text-align: center;
   }
 
+  .footer-tagline {
+    font-size: 17px;
+    max-width: 250px;
+    margin: 0 auto 2em;
+  }
+
   .socials {
     justify-content: center;
+    margin-bottom: 1em;
+  }
+
+  .footer-days, .footer-times {
+    display: inline;
+  }
+
+  .footer-days::after {
+    content: " • ";
+  }
+
+  .footer-times {
+    font-weight: 900;
   }
 }
