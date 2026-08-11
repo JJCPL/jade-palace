@@ -1578,6 +1578,8 @@ body.menu-open {
 
 /* ZODIAC RESULTS  */
 
+
+
 .zodiac-placeholder {
   display: flex;
   flex-direction: column;
@@ -1606,10 +1608,18 @@ body.menu-open {
   pointer-events: none;
 }
 
+  .placeholder-icon img {
+    width: 65px;
+    height: 65px;
+  }
+
 .placeholder-icon {
-  font-family: serif;
-  font-size: 4.5rem;
-  color: var(--accent-dark);
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
   animation: slowSpin 30s linear infinite;
 
   filter:
@@ -1629,6 +1639,7 @@ body.menu-open {
 }
 
 .zodiac-placeholder p {
+  margin-top: 1rem;
   color: rgba(255, 245, 220, 0.72);
   font-weight: 400;
   font-size: 1.15rem;
@@ -3003,12 +3014,14 @@ body.menu-open {
   /* Reviews Page */
 
   .review-header {
-    font-size: clamp(30px, 20vw, 38px);
+    font-size: clamp(30px, 9vw, 38px);
     margin-bottom: 1.1rem;
   }
 
   .review-subheader {
-    width: 22em;
+    width: 90%;
+    max-width: 600px;
+    font-size: 1rem;
   }
 
   .stat-card {
@@ -3091,10 +3104,19 @@ body.menu-open {
 
   .placeholder-icon {
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .placeholder-icon img {
+    width: 65px;
+    height: 65px;
   }
 
   .zodiac-placeholder p {
-    margin-top: 0.1rem;
+    margin-top: 1rem;
     font-size: 1rem;
     text-align: center;
   }
