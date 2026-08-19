@@ -37,3 +37,23 @@ const initAnimations = () => {
 
 initAnimations();
 
+// Add observer animation for adding overlay to option images
+
+const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("in-view")
+        } else {
+            entry.target.classList.remove("in-view");
+        }
+    });
+});
+
+const initOptionOverlay = () => {
+    const options = document.querySelectorAll(".option");
+    options.forEach(option => {
+        observer2.observe(option);
+    });
+}
+
+initOptionOverlay();

@@ -2698,6 +2698,25 @@ body.menu-open {
     line-height: 1.8;
   }
 
+  .freshest-phone-links {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1rem;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  .page-link.phone {
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-top: 0;
+    letter-spacing: 0.7px;
+    font-size: 1.3rem;
+  }
+
   .service-options {
     grid-template-columns: 1fr;
   }
@@ -2720,6 +2739,11 @@ body.menu-open {
     object-fit: contain;
     display: block;
     width: 100%;
+  }
+
+  .option.in-view .option-overlay {
+    opacity: 1;
+    transform: translateY(10px);
   }
 
   .location-container {

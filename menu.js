@@ -14,11 +14,11 @@ const menu = [
       },
       {
         name: "Chicken and Sweetcorn Soup",
-        price: 4.3,
+        price: 4.5,
       },
       {
         name: "Chicken Noodle Soup",
-        price: 4.3,
+        price: 4.5,
       },
       {
         name: "Crispy Vegetable Pancake Rolls (8)",
@@ -30,7 +30,7 @@ const menu = [
       },
       {
         name: "Skewered Satay Stick Chicken (4)",
-        price: 6.6,
+        price: 6.8,
       },
       {
         name: "Skewered Satay Stick King Prawn (4)",
@@ -38,7 +38,7 @@ const menu = [
       },
       {
         name: "Skewered Satay Stick Beef (4)",
-        price: 6.6,
+        price: 6.8,
       },
     ],
   },
@@ -47,36 +47,36 @@ const menu = [
     category: "Spare Rib Dishes",
     items: [
       {
-        name: "Crispy Spare Ribs in Spicy Garlic Sauce",
-        price: 8.4,
+        name: "Crispy Spare Ribs in Spicy Garlic Sauce (Szechuan Style)",
+        price: 8.7,
       },
       {
         name: "Cantonese Style Spare Ribs with Vegetables",
-        price: 8.4,
+        price: 8.7,
       },
       {
         name: "Spare Ribs in Barbecue Sauce",
-        price: 8.2,
+        price: 8.5,
       },
       {
         name: "Spare Ribs in Sweet and Sour Sauce",
-        price: 8.2,
+        price: 8.5,
       },
       {
         name: "Spare Ribs in Black Bean Sauce",
-        price: 8.2,
+        price: 8.5,
       },
       {
         name: "Crispy Spare Ribs in Hoi Sin Sauce",
-        price: 8.4,
+        price: 8.7,
       },
       {
         name: "Salt and Pepper Chilli Spare Ribs",
-        price: 8.4,
+        price: 8.7,
       },
       {
-        name: "Crispy Aromatic Spare Ribs",
-        price: 8.2,
+        name: "Crispy Aromatic Spare Ribs (Dry with Lemon)",
+        price: 8.5,
       },
     ],
   },
@@ -86,35 +86,35 @@ const menu = [
     items: [
       {
         name: "Roast Duck with Mixed Vegetables",
-        price: 9.2,
+        price: 9.5,
       },
       {
         name: "Roast Duck with Pineapple",
-        price: 9.2,
+        price: 9.5,
       },
       {
         name: "Roast Duck with Mushrooms",
-        price: 9.2,
+        price: 9.5,
       },
       {
         name: "Roast Duck with Beansprouts",
-        price: 9.2,
+        price: 9.5,
       },
       {
-        name: "Roast Duck with Plum Sauce",
-        price: 9.4,
+        name: "Roast Duck with Cantonese Plum Sauce",
+        price: 9.7,
       },
       {
         name: "Roast Duck & Chinese Roast Pork with Egg Fried Rice & BBQ Sauce",
-        price: 8.7,
-      },
-      {
-        name: "Crispy Aromatic Duck (Half)",
-        price: 21.5,
+        price: 9.1,
       },
       {
         name: "Crispy Aromatic Duck (Quarter)",
-        price: 14.5,
+        price: 15.0,
+      },
+      {
+        name: "Crispy Aromatic Duck (Half)",
+        price: 22.0,
       },
     ],
   },
@@ -124,35 +124,35 @@ const menu = [
     items: [
       {
         name: "Squid with Ginger and Spring Onion",
-        price: 8.4,
-      },
-      {
-        name: "Squid with Fresh Chilli and Black Bean Sauce",
         price: 8.7,
       },
       {
-        name: "Squid with Mixed Vegetables",
-        price: 8.4,
+        name: "Squid with Fresh Chilli and Black Bean Sauce",
+        price: 9.0,
       },
       {
-        name: "Squid with Pineapple",
-        price: 8.4,
+        name: "Squid with Green Pepper ansd Black Bean Sauce",
+        price: 8.7,
       },
       {
-        name: "Squid with Mushrooms",
-        price: 8.4,
+        name: "Squid with Fresh Broccoli (in Black Bean or Oyster Sauce)",
+        price: 8.7,
       },
       {
-        name: "Squid with Beansprouts",
-        price: 8.4,
+        name: "Deep Fried Squid with Sweet and Sour Sauce",
+        price: 8.7,
       },
       {
-        name: "Squid with Sweet and Sour Sauce",
-        price: 8.4,
+        name: "Deep Fried Squid with Sweet and Chilli Sauce",
+        price: 8.7,
       },
       {
-        name: "Squid with Garlic Sauce",
-        price: 8.4,
+        name: "Deep Fried Salt and Pepper Chilli Squid",
+        price: 9.0,
+      },
+      {
+        name: "Squid with Satay Sauce",
+        price: 8.7,
       },
     ],
   },
@@ -162,75 +162,75 @@ const menu = [
     items: [
       {
         name: "King Prawn with Fresh Ginger and Spring Onion",
-        price: 9.4,
-      },
-      {
-        name: "King Prawn with Cashew Nuts",
-        price: 9.4,
-      },
-      {
-        name: "King Prawn with Green Peppers and Black Bean Sauce",
-        price: 9.4,
-      },
-      {
-        name: "King Prawn with Fresh Chilli and Black Bean Sauce",
         price: 9.6,
       },
       {
+        name: "King Prawn with Cashew Nuts",
+        price: 9.6,
+      },
+      {
+        name: "King Prawn with Green Peppers and Black Bean Sauce",
+        price: 9.6,
+      },
+      {
+        name: "King Prawn with Fresh Chilli and Black Bean Sauce",
+        price: 9.8,
+      },
+      {
         name: "King Prawn in Cantonese Sauce with Mixed Vegetables",
-        price: 9.4,
+        price: 9.6,
       },
       {
         name: "Kung Po King Prawn (Sweet and Sour Spicy)",
-        price: 9.4,
+        price: 9.7,
       },
       {
         name: "King Prawn with Bamboo Shoots and Water Chestnuts",
-        price: 9.4,
+        price: 9.6,
       },
       {
         name: "King Prawn with Baby Corn and Straw Mushrooms",
-        price: 9.2,
+        price: 9.4,
       },
       {
         name: "King Prawn with Pineapple",
-        price: 9.2,
+        price: 9.4,
       },
       {
         name: "King Prawn with Fresh Tomato",
-        price: 9.2,
+        price: 9.4,
       },
       {
         name: "King Prawn with Fresh Mushrooms",
-        price: 9.2,
+        price: 9.4,
       },
       {
         name: "Garlic King Prawns",
-        price: 9.2,
+        price: 9.3,
       },
       {
         name: "King Prawn in Oyster Sauce",
-        price: 9.2,
+        price: 9.4,
       },
       {
         name: "King Prawn Chop Suey (Mixed Vegetables)",
-        price: 9.2,
+        price: 9.4,
       },
       {
         name: "King Prawn in Hot Spicy Sauce",
-        price: 9.4,
+        price: 9.6,
       },
       {
         name: "Crispy King Prawn Peking Style",
-        price: 9.4,
+        price: 9.6,
       },
       {
         name: "King Prawn with Broccoli (Black Bean or Oyster Sauce)",
-        price: 9.4,
+        price: 9.6,
       },
       {
         name: "Deep Fried Salt and Pepper Chilli King Prawns",
-        price: 9.4,
+        price: 9.6,
       },
     ],
   },
@@ -240,87 +240,87 @@ const menu = [
     items: [
       {
         name: "Special Chop Suey (Mixed Meats and King Prawns)",
-        price: 7.9,
+        price: 8.2,
       },
       {
         name: "Sliced Chicken and Roast Pork with Beansprouts",
-        price: 7.0,
+        price: 7.2,
       },
       {
         name: "Chicken in Lemon Sauce",
-        price: 7.7,
+        price: 8.0,
       },
       {
         name: "Chicken with Fresh Ginger and Spring Onions",
-        price: 7.9,
+        price: 8.2,
       },
       {
         name: "Chicken with Green Peppers in Black Bean Sauce",
-        price: 7.9,
+        price: 8.2,
       },
       {
         name: "Chicken with Fresh Chilli in Black Bean Sauce",
-        price: 8.2,
+        price: 8.5,
       },
       {
         name: "Chicken in Oyster Sauce",
-        price: 7.9,
-      },
-      {
-        name: "Chicken in Cantonese Sauce",
-        price: 7.8,
-      },
-      {
-        name: "Chicken with Cashew Nuts",
         price: 8.2,
       },
       {
+        name: "Chicken in Cantonese Sauce",
+        price: 8.1,
+      },
+      {
+        name: "Chicken with Cashew Nuts",
+        price: 8.5,
+      },
+      {
         name: "Chicken with Fresh Mushrooms",
-        price: 7.8,
+        price: 8.1,
       },
       {
         name: "Chicken with Fresh Tomato",
-        price: 7.6,
+        price: 7.9,
       },
       {
         name: "Chicken with Pineapple",
-        price: 7.6,
+        price: 7.9,
       },
       {
         name: "Kung Po Chicken (Sweet and Sour Spicy)",
-        price: 7.8,
+        price: 8.1,
       },
       {
         name: "Chicken with Bamboo Shoots and Water Chestnuts",
-        price: 7.4,
+        price: 7.7,
       },
       {
         name: "Chicken Chop Suey (Mixed Vegetables)",
-        price: 7.4,
+        price: 7.7,
       },
       {
         name: "Crispy Chicken Peking Style",
-        price: 7.9,
+        price: 8.2,
       },
       {
         name: "Chicken with Babycorn and Straw Mushrooms",
-        price: 7.5,
+        price: 7.8,
       },
       {
         name: "Chicken in Hot Spicy Sauce",
-        price: 7.8,
+        price: 8.1,
       },
       {
         name: "Crispy Pork Peking Style",
-        price: 7.8,
+        price: 8.1,
       },
       {
         name: "Chicken with Broccoli (Black Bean or Oyster Sauce)",
-        price: 7.9,
+        price: 8.2,
       },
       {
         name: "Deep Fried Salt and Pepper Chilli Chicken",
-        price: 8.0,
+        price: 8.3,
       },
     ],
   },
@@ -329,78 +329,74 @@ const menu = [
     category: "Beef Dishes",
     items: [
       {
-        name: "Beef with Fresh Ginger and Spring Onions",
-        price: 8.2,
-      },
-      {
         name: "Beef with Onions",
-        price: 7.8,
-      },
-      {
-        name: "Deep Fried Crispy Beef in Hot Spicy Sauce",
-        price: 8.3,
-      },
-      {
-        name: "Beef with Fresh Tomato",
-        price: 7.9,
-      },
-      {
-        name: "Kung Po Beef (Sweet and Sour Spicy)",
-        price: 8.0,
-      },
-      {
-        name: "Beef with Fresh Chilli in Black Bean Sauce",
-        price: 8.4,
-      },
-      {
-        name: "Beef with Green Peppers in Black Bean Sauce",
-        price: 8.2,
-      },
-      {
-        name: "Beef Chop Suey (Mixed Vegetables)",
-        price: 7.8,
-      },
-      {
-        name: "Beef in Oyster Sauce",
-        price: 7.9,
-      },
-      {
-        name: "Beef with Bamboo Shoots and Water Chestnuts",
-        price: 7.7,
-      },
-      {
-        name: "Beef with Cashew Nuts",
-        price: 8.4,
-      },
-      {
-        name: "Beef with Fresh Mushrooms",
-        price: 7.7,
-      },
-      {
-        name: "Beef in Cantonese Sauce",
-        price: 8.0,
-      },
-      {
-        name: "Beef in Hot Spicy Sauce",
         price: 8.1,
       },
       {
-        name: "Beef with Broccoli (Black Bean or Oyster Sauce)",
+        name: "Deep Fried Crispy Beef in Hot Spicy Sauce",
+        price: 8.6,
+      },
+      {
+        name: "Beef with Fresh Tomato",
+        price: 8.1,
+      },
+      {
+        name: "Kung Po Beef (Sweet and Sour Spicy)",
         price: 8.3,
+      },
+      {
+        name: "Beef with Fresh Chilli in Black Bean Sauce",
+        price: 8.7,
+      },
+      {
+        name: "Beef with Green Peppers in Black Bean Sauce",
+        price: 8.5,
+      },
+      {
+        name: "Beef Chop Suey (Mixed Vegetables)",
+        price: 8.1,
+      },
+      {
+        name: "Beef in Oyster Sauce",
+        price: 8.2,
+      },
+      {
+        name: "Beef with Bamboo Shoots and Water Chestnuts",
+        price: 8.0,
+      },
+      {
+        name: "Beef with Cashew Nuts",
+        price: 8.7,
+      },
+      {
+        name: "Beef with Fresh Mushrooms",
+        price: 8.0,
+      },
+      {
+        name: "Beef in Cantonese Sauce",
+        price: 8.3,
+      },
+      {
+        name: "Beef in Hot Spicy Sauce",
+        price: 8.4,
+      },
+      {
+        name: "Beef with Fresh Ginger and Spring Onions",
+        price: 8.3,
+      },
+      {
+        name: "Beef with Broccoli (Black Bean or Oyster Sauce)",
+        price: 8.6,
       },
     ],
   },
 
   {
-    category: "Jade Palace Specials",
+    category: "Jade Palace Special with boiled rice",
     items: [
       {
-        name: "Jade Palace Special (Chicken, Roast Pork, King Prawn & Beef with Mixed Vegetables, served with Boiled Rice)",
-        price: 8.4,
-      },
-      {
-        name: "Lammy Special (Chicken, Roast Pork, King Prawn with Mixed Vegetables carefully selected from the son of the business)",
-        price: 9,
+        name: "Jade Palace Special (Chicken, Roast Pork, King Prawn & Beef with Mixed Vegetables)",
+        price: 8.7,
       },
     ],
   },
@@ -410,103 +406,103 @@ const menu = [
     items: [
       {
         name: "Special Fried Rice",
-        price: 7.9,
+        price: 8.2,
       },
       {
         name: "King Prawn Fried Rice",
-        price: 8.7,
+        price: 9.0,
       },
       {
         name: "Shrimp Fried Rice",
-        price: 7.7,
-      },
-      {
-        name: "Chicken Fried Rice",
-        price: 7.7,
-      },
-      {
-        name: "Singapore Fried Rice (Spicy)",
-        price: 7.9,
-      },
-      {
-        name: "Young Chow Fried Rice",
-        price: 7.8,
-      },
-      {
-        name: "Roast Duck Fried Rice",
-        price: 9.0,
-      },
-    ],
-  },
-
-  {
-    category: "Chow Mein Dishes",
-    items: [
-      {
-        name: "Special Chow Mein (Mixed Meats and King Prawns)",
-        price: 8.4,
-      },
-      {
-        name: "King Prawn Chow Mein",
-        price: 8.8,
-      },
-      {
-        name: "Shrimp Chow Mein",
-        price: 7.7,
-      },
-      {
-        name: "Chicken Chow Mein",
-        price: 7.7,
-      },
-      {
-        name: "Beef Chow Mein",
-        price: 7.9,
-      },
-      {
-        name: "Chinese Roast Pork Chow Mein",
-        price: 7.9,
-      },
-      {
-        name: "Singapore Chow Mein (Spicy)",
         price: 8.0,
       },
       {
-        name: "Roast Duck Chow Mein",
-        price: 9.0,
+        name: "Chicken Fried Rice",
+        price: 8.0,
+      },
+      {
+        name: "Singapore Fried Rice (Spicy)",
+        price: 8.2,
+      },
+      {
+        name: "Young Chow Fried Rice",
+        price: 8.1,
+      },
+      {
+        name: "Roast Duck Fried Rice",
+        price: 9.3,
       },
     ],
   },
 
   {
-    category: "Curry Dishes",
+    category: "Chow Mein Dishes (Noodles)",
+    items: [
+      {
+        name: "Special Chow Mein (Mixed Meats and King Prawns)",
+        price: 8.7,
+      },
+      {
+        name: "King Prawn Chow Mein",
+        price: 9.1,
+      },
+      {
+        name: "Shrimp Chow Mein",
+        price: 8.0,
+      },
+      {
+        name: "Chicken Chow Mein",
+        price: 8.0,
+      },
+      {
+        name: "Beef Chow Mein",
+        price: 8.2,
+      },
+      {
+        name: "Chinese Roast Pork Chow Mein",
+        price: 8.2,
+      },
+      {
+        name: "Singapore Chow Mein (Spicy)",
+        price: 8.3,
+      },
+      {
+        name: "Roast Duck Chow Mein",
+        price: 9.3,
+      },
+    ],
+  },
+
+  {
+    category: "Curry Dishes (Not including rice)",
     items: [
       {
         name: "Special Curry (Mixed Meats and King Prawns)",
-        price: 7.8,
+        price: 8.0,
       },
       {
         name: "King Prawn Curry",
-        price: 7.9,
+        price: 8.0,
       },
       {
         name: "Shrimp Curry",
-        price: 6.9,
-      },
-      {
-        name: "Chicken Curry",
-        price: 6.9,
-      },
-      {
-        name: "Beef Curry",
         price: 7.0,
       },
       {
+        name: "Chicken Curry",
+        price: 7.1,
+      },
+      {
+        name: "Beef Curry",
+        price: 7.1,
+      },
+      {
         name: "Chinese Roast Pork Curry",
-        price: 6.9,
+        price: 7.1,
       },
       {
         name: "Roast Duck Curry",
-        price: 7.9,
+        price: 8.1,
       },
     ],
   },
@@ -516,71 +512,71 @@ const menu = [
     items: [
       {
         name: "Sweet & Sour King Prawns in Batter",
-        price: 8.9,
+        price: 9.2,
       },
       {
         name: "Sweet & Sour King Prawns (Hong Kong Style)",
-        price: 9.0,
+        price: 9.3,
       },
       {
         name: "Sweet & Sour Chicken in Batter",
-        price: 7.7,
+        price: 8.0,
       },
       {
         name: "Sweet & Sour Chicken (Hong Kong Style)",
-        price: 7.9,
+        price: 8.2,
       },
       {
         name: "Sweet & Sour Pork (Hong Kong Style)",
-        price: 7.9,
+        price: 8.2,
       },
       {
         name: "Mixed Sweet & Sour King Prawns & Chicken in Batter",
+        price: 8.3,
+      },
+    ],
+  },
+
+  {
+    category: "Satay Dishes (Spicy Peanut Sauce)",
+    items: [
+      {
+        name: "Special Satay (Mixed Meats and King Prawns)",
+        price: 8.7,
+      },
+      {
+        name: "King Prawn Satay",
+        price: 9.0,
+      },
+      {
+        name: "Chicken Satay",
+        price: 7.9,
+      },
+      {
+        name: "Beef Satay",
         price: 8.0,
       },
     ],
   },
 
   {
-    category: "Satay Dishes",
-    items: [
-      {
-        name: "Special Satay (Mixed Meats and King Prawns)",
-        price: 8.4,
-      },
-      {
-        name: "King Prawn Satay",
-        price: 8.7,
-      },
-      {
-        name: "Chicken Satay",
-        price: 7.7,
-      },
-      {
-        name: "Beef Satay",
-        price: 7.9,
-      },
-    ],
-  },
-
-  {
-    category: "Szechuan Dishes",
+    category: "Szechuan Dishes (Hot & Spicy Yellow Bean Sauce)",
     items: [
       {
         name: "Special Szechuan (Mixed Meats and King Prawns)",
-        price: 8.1,
+        price: 8.4,
       },
       {
         name: "Szechuan King Prawns",
-        price: 8.5,
+        price: 8.8,
       },
       {
         name: "Szechuan Chicken",
-        price: 7.5,
+        price: 7.7,
       },
       {
         name: "Szechuan Beef",
-        price: 7.6,
+        price: 7.8,
       },
     ],
   },
@@ -590,15 +586,15 @@ const menu = [
     items: [
       {
         name: "Special Foo Young",
-        price: 7.5,
+        price: 7.7,
       },
       {
         name: "Shrimp Foo Young",
-        price: 7.1,
+        price: 7.3,
       },
       {
         name: "Chicken Foo Young",
-        price: 7.2,
+        price: 7.5,
       },
       {
         name: "Mushroom Foo Young",
@@ -606,7 +602,7 @@ const menu = [
       },
       {
         name: "King Prawn Foo Young",
-        price: 8.6,
+        price: 8.9,
       },
     ],
   },
@@ -616,39 +612,39 @@ const menu = [
     items: [
       {
         name: "Mushroom Fried Rice",
-        price: 6.4,
+        price: 6.6,
       },
       {
         name: "Vegetable Chow Mein",
-        price: 6.7,
+        price: 6.8,
       },
       {
         name: "Mushroom Chow Mein",
-        price: 6.7,
+        price: 6.9,
       },
       {
         name: "Vegetable Curry (Includes Boiled Rice or Chips)",
-        price: 7.3,
+        price: 7.6,
       },
       {
         name: "Mushroom Curry (Includes Boiled Rice or Chips)",
-        price: 7.3,
+        price: 7.6,
       },
       {
         name: "Sweet and Sour Mixed Vegetables",
-        price: 5.9,
+        price: 6.2,
       },
       {
         name: "Mixed Vegetables in Satay Sauce",
-        price: 5.9,
+        price: 6.2,
       },
       {
         name: "Mixed Vegetables in Black Bean Sauce",
-        price: 6.0,
+        price: 6.3,
       },
       {
         name: "Mixed Vegetables in Hot Spicy Sauce",
-        price: 6.0,
+        price: 6.3,
       },
       {
         name: "Stir Fry Broccoli in Garlic Sauce",
@@ -656,7 +652,7 @@ const menu = [
       },
       {
         name: "Singapore Vegetable Chow Mein (Spicy)",
-        price: 7.0,
+        price: 7.2,
       },
     ],
   },
@@ -666,19 +662,19 @@ const menu = [
     items: [
       {
         name: "Shrimp Omelette and Chips",
-        price: 7.2,
+        price: 7.4,
       },
       {
         name: "Chicken Omelette and Chips",
-        price: 7.3,
+        price: 7.5,
       },
       {
         name: "Mushroom Omelette and Chips",
-        price: 6.5,
+        price: 6.7,
       },
       {
         name: "Special Omelette and Chips",
-        price: 7.5,
+        price: 7.7,
       },
       {
         name: "Plain Omelette and Chips",
@@ -686,7 +682,7 @@ const menu = [
       },
       {
         name: "King Prawn Omelette and Chips",
-        price: 8.6,
+        price: 8.8,
       },
     ],
   },
@@ -710,23 +706,23 @@ const menu = [
     items: [
       {
         name: "Boiled Rice",
-        price: 3.8,
+        price: 4.0,
       },
       {
         name: "Egg Fried Rice",
-        price: 4.1,
+        price: 4.3,
       },
       {
         name: "Chips",
-        price: 3.6,
+        price: 3.8,
       },
       {
         name: "Salt & Pepper Chips",
-        price: 4.4,
+        price: 4.6,
       },
       {
         name: "Three-in-One (Fried Rice, Chips & Curry Sauce)",
-        price: 5.9,
+        price: 6.0,
       },
       {
         name: "Beansprouts",
@@ -734,35 +730,35 @@ const menu = [
       },
       {
         name: "Fried Noodles with Beansprouts",
-        price: 4.8,
+        price: 5.0,
       },
       {
         name: "Mixed Vegetables",
-        price: 4.8,
+        price: 5.0,
       },
       {
         name: "Mushrooms",
-        price: 4.7,
+        price: 4.9,
       },
       {
         name: "Garlic Mushrooms",
-        price: 4.8,
+        price: 5.0,
       },
       {
         name: "Bamboo Shoots and Water Chestnuts",
-        price: 4.3,
+        price: 4.5,
       },
       {
         name: "Curry Sauce",
-        price: 2.8,
+        price: 3.0,
       },
       {
         name: "Sweet and Sour Sauce",
-        price: 2.8,
+        price: 3.0,
       },
       {
         name: "Barbecue Sauce",
-        price: 2.8,
+        price: 3.0,
       },
     ],
   },
@@ -812,7 +808,7 @@ const setMenus = [
     dishes: [
       "Cantonese Style Spare Ribs",
       "King Prawn with Green Peppers in Black Bean Sauce ",
-      "Rotast Duck with Mixed Vegetables",
+      "Roast Duck with Mixed Vegetables",
       "Satay Chicken",
       "Deep Fried Crispy Beef in Hot Spicy Sauce",
       "Young Chow Fried Rice",
