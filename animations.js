@@ -42,18 +42,43 @@ initAnimations();
 const observer2 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add("in-view")
+            entry.target.classList.add("in-view");
         } else {
             entry.target.classList.remove("in-view");
         }
     });
-});
+}, {
+    rootMargin: "-30% 0px -30% 0px"
+	 });
 
 const initOptionOverlay = () => {
     const options = document.querySelectorAll(".option");
+
     options.forEach(option => {
         observer2.observe(option);
     });
 }
 
 initOptionOverlay();
+
+// Scroll animation after our location button called
+
+const ourLocation = () => {
+
+    const ourLocationBTN = document.querySelector(".secondary-cta");
+    const findLocationSection = document.querySelector(".location");
+
+    ourLocationBTN.addEventListener("click", () => {
+
+        event.preventDefault();
+
+        findLocationSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    });
+};
+
+
+ourLocation();

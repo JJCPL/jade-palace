@@ -170,11 +170,17 @@ const renderCart = () => {
   if (cart.length === 0) {
     const empty = document.createElement("div");
     empty.classList.add("empty-cart");
-    empty.innerHTML = ` 
-                <i class="fa-solid fa-basket-shopping empty-icon"></i>   
-                <h3>Currently your cart is empty</h3>
-                <p>Start adding dishes to build your order</p>
-            
+    empty.innerHTML = `
+                  <i class="fa-solid fa-basket-shopping empty-icon"></i>
+
+                  <h3>Currently your cart is empty</h3>
+
+                  <p>Start adding dishes to build your order</p>
+
+                <div class="empty-cart-reminder">
+                  <p>Reminder: This menu is a guide to calculate your order total.</p>
+                  <p>All orders must be placed by phone or in person at the shop.</p>
+                </div>
             `;
 
     cartContainer.appendChild(empty);
@@ -241,6 +247,10 @@ const renderCart = () => {
 
   cartContainer.appendChild(totalCart);
 
+  if (mobileContainer) {
+    mobileContainer.appendChild(totalCart.cloneNode(true));
+  }
+
   // Add Clear Order Button
 
   const clearButton = document.createElement("button");
@@ -265,7 +275,7 @@ const renderCart = () => {
                 <span class="phone-label">Main Line</span>
                 <a href="tel:01803521888" class="phone-link">01803 521888</a>
             </div>
-           
+
             <div class="phone-block">
                 <span class="phone-label">Second Line</span>
                 <a href="tel:01803526688" class="phone-link">01803 526688</a>
